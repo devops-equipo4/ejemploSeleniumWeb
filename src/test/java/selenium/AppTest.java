@@ -64,5 +64,6 @@ public class AppTest
         driver.findElement(By.cssSelector(".standard-checkout > span")).click();
         driver.findElement(By.cssSelector(".bankwire > span")).click();
         driver.findElement(By.cssSelector("#cart_navigation span")).click();
+        driver.findElement(By.linkText("Sign out")).click();
     }
 }
