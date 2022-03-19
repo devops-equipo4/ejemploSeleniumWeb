@@ -67,7 +67,7 @@ public class AppTest
 //    }
 
     @Test
-    public void registerSomeone() {
+    public void registerAndBuy() {
         driver.get("http://automationpractice.com/index.php");
         driver.manage().window().setSize(new Dimension(847, 697));
         driver.findElement(By.linkText("Sign in")).click();
@@ -166,34 +166,6 @@ public class AppTest
             WebDriverWait wait = new WebDriverWait(driver, 10);
             wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".standard-checkout > span")));
         }
-        driver.findElement(By.cssSelector(".standard-checkout > span")).click();
-        driver.findElement(By.cssSelector(".bankwire > span")).click();
-        driver.findElement(By.cssSelector("#cart_navigation span")).click();
-        driver.findElement(By.linkText("Sign out")).click();
-        driver.close();
-    }
-
-    //@Test
-    public void buySomething() {
-        driver.get("http://automationpractice.com/index.php");
-        driver.manage().window().setSize(new Dimension(847, 700));
-        driver.findElement(By.linkText("Sign in")).click();
-        driver.findElement(By.id("email")).click();
-        driver.findElement(By.id("email")).sendKeys(randMail);
-        driver.findElement(By.id("passwd")).click();
-        driver.findElement(By.id("passwd")).sendKeys("123456");
-        driver.findElement(By.cssSelector("#SubmitLogin > span")).click();
-        driver.findElement(By.cssSelector(".logo")).click();
-        driver.findElement(By.cssSelector("#homefeatured > .ajax_block_product:nth-child(1) .button:nth-child(1) > span")).click();
-        driver.findElement(By.cssSelector(".continue > span")).click();
-        driver.findElement(By.cssSelector("#homefeatured > .ajax_block_product:nth-child(5) .button:nth-child(1) > span")).click();
-        driver.findElement(By.cssSelector(".continue > span")).click();
-        driver.findElement(By.cssSelector("#homefeatured > .ajax_block_product:nth-child(7) .button:nth-child(1) > span")).click();
-        driver.findElement(By.cssSelector(".button-medium > span")).click();
-        driver.findElement(By.cssSelector(".standard-checkout > span")).click();
-        driver.findElement(By.cssSelector(".button:nth-child(4) > span")).click();
-        driver.findElement(By.cssSelector(".order_carrier_content")).click();
-        driver.findElement(By.id("cgv")).click();
         driver.findElement(By.cssSelector(".standard-checkout > span")).click();
         driver.findElement(By.cssSelector(".bankwire > span")).click();
         driver.findElement(By.cssSelector("#cart_navigation span")).click();
