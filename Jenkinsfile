@@ -15,7 +15,7 @@ pipeline {
                 script {
                     sh "echo 'Test Code!'"
                     // Run Maven on a Unix agent.
-                    sh 'mvn clean test -e'
+                    sh 'mvn clean test -f "pom.xml"'
                 }
             }
         }
@@ -32,11 +32,6 @@ pipeline {
                 success {
                     archiveArtifacts artifacts:'build/*.jar'
                 }
-            }
-        }
-        stage(" Paso 7: Test Selenium"){
-            steps {
-               sh 'mvn test -f  "pom.xml" '
             }
         }
     }

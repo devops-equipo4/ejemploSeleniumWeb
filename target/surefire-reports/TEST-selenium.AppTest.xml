@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="selenium.AppTest" time="44.348" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="selenium.AppTest" time="20.763" tests="1" errors="1" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="GB"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Microsoft\jdk-11.0.12.7-hotspot\bin"/>
-    <property name="sun.java.command" value="C:\Users\Rodrigo\AppData\Local\Temp\surefire11792202513426901362\surefirebooter18281858541277955834.jar C:\Users\Rodrigo\AppData\Local\Temp\surefire11792202513426901362 2022-03-19T18-45-08_869-jvmRun1 surefire5712735803383429243tmp surefire_013890085665598134816tmp"/>
+    <property name="sun.java.command" value="C:\Users\Rodrigo\AppData\Local\Temp\surefire1118678039332567530\surefirebooter18028466959227907735.jar C:\Users\Rodrigo\AppData\Local\Temp\surefire1118678039332567530 2022-03-20T17-56-01_226-jvmRun1 surefire15131871027889701550tmp surefire_015209019653867109944tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="c:\Users\Rodrigo\Source\Repos\ejemploSeleniumWeb-grupo4\target\test-classes;c:\Users\Rodrigo\Source\Repos\ejemploSeleniumWeb-grupo4\target\classes;C:\Users\Rodrigo\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\Rodrigo\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\Rodrigo\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\Rodrigo\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\Rodrigo\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\Rodrigo\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\Rodrigo\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\Rodrigo\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\Rodrigo\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\Rodrigo\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\Rodrigo\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\Rodrigo\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Rodrigo\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\Rodrigo\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\Rodrigo\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\Rodrigo\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\Rodrigo\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\Rodrigo\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\Rodrigo\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\Rodrigo\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\Rodrigo\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\Rodrigo\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\Rodrigo\AppData\Local\Temp\surefire11792202513426901362\surefirebooter18281858541277955834.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Rodrigo\AppData\Local\Temp\surefire1118678039332567530\surefirebooter18028466959227907735.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.12+7"/>
@@ -60,5 +60,22 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="registerAndBuy" classname="selenium.AppTest" time="44.285"/>
+  <testcase name="registerAndBuy" classname="selenium.AppTest" time="20.699">
+    <error message="Timed out waiting for driver server to start.&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;DESKTOP-ENRJ341&apos;, ip: &apos;192.168.1.82&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.12&apos;&#10;Driver info: driver.version: ChromeDriver" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
+Timed out waiting for driver server to start.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-ENRJ341', ip: '192.168.1.82', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: driver.version: ChromeDriver
+	at selenium.AppTest.setUp(AppTest.java:50)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:18254/status] to be available after 20014 ms
+	at selenium.AppTest.setUp(AppTest.java:50)
+Caused by: java.util.concurrent.TimeoutException
+	at selenium.AppTest.setUp(AppTest.java:50)
+</error>
+    <system-out><![CDATA[Iniciando configuración...
+]]></system-out>
+    <system-err><![CDATA[Mar 20, 2022 5:56:22 PM org.openqa.selenium.os.OsProcess checkForError
+SEVERE: org.apache.commons.exec.ExecuteException: Execution failed (Exit value: -559038737. Caused by java.io.IOException: Cannot run program "C:\Users\Rodrigo\Source\Repos\ejemploSeleniumWeb-grupo4\drivers\chromedriver" (in directory "."): CreateProcess error=193, %1 is not a valid Win32 application)
+]]></system-err>
+  </testcase>
 </testsuite>
