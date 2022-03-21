@@ -45,6 +45,7 @@ public class AppTest
         System.out.println("Iniciando configuración...");
 //        ChromeDriver por defecto
         System.setProperty("webdriver.chrome.driver","drivers/chromedriver");
+        System.setProperty("webdriver.chrome.whitelistedIps", "");
 //        ChromeDriver V99 para Windows
 //        System.setProperty("webdriver.chrome.driver","drivers/chromedriver_win.exe");
         driver = new ChromeDriver();
