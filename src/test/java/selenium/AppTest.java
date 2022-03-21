@@ -8,6 +8,7 @@ import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.junit.Test;
 import org.junit.Before;
 import org.openqa.selenium.interactions.Actions;
@@ -46,9 +47,13 @@ public class AppTest
 //        ChromeDriver por defecto
         System.setProperty("webdriver.chrome.driver","drivers/chromedriver");
         System.setProperty("webdriver.chrome.whitelistedIps", "");
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless");
+        options.addArguments("--no-sandbox");
+        options.addArguments("--disable-dev-shm-usage");
 //        ChromeDriver V99 para Windows
 //        System.setProperty("webdriver.chrome.driver","drivers/chromedriver_win.exe");
-        driver = new ChromeDriver();
+        driver = new ChromeDriver(options);
         randMail = getSaltString()+"@diplousach.com";
 //        driver.get("https://www.amazon.com");
 //        driver.manage().window().maximize();
