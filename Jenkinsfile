@@ -10,27 +10,12 @@ pipeline {
                 }
             }
         }
-        stage('Paso 2: Testear') {
+        stage('Paso 2: Testear con Selenium') {
             steps {
                 script {
                     sh "echo 'Test Code!'"
                     // Run Maven on a Unix agent.
                     sh 'mvn clean test -f "pom.xml"'
-                }
-            }
-        }
-        stage('Paso 3: Build .Jar') {
-            steps {
-                script {
-                    sh "echo 'Build .Jar!'"
-                    // Run Maven on a Unix agent.
-                    sh 'mvn clean package -e'
-                }
-            }
-            post {
-                //record the test results and archive the jar file.
-                success {
-                    archiveArtifacts artifacts:'build/*.jar'
                 }
             }
         }
